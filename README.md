@@ -73,12 +73,17 @@ app.listen(server.port, () => {
 
 #### Step by Step Walkthrough the Code in ./src/index.js
 
-In each line of code below we are using nodejs's <code>require</code> function to import a package and assign it to a named variable so that we can refer to it later in our code when we want to use it. 
+In each line of code below we are using nodejs's <code>require</code> function to import a package and assign its returned value to a named variable so that we can refer to it later in our code when we want to use it. 
 ```js
 const Koa = require('koa')
-const bodyparser = require('koa-bodyparser')
-const cors = require('kcors')
-const url = require('url')
+const bodyparser = require('koa-bodyparser') // parses the request object 
+const cors = require('kcors') // makes cross origin request possible
+const url = require('url') // is used to format url objects
+```
+
+The <code>app.use()</code> function takes middleware as an argument. Here we can place routes or other kinds of mutations and checks that will run on each request. In the example below 
+```js
+app.use(someMiddleware())
 ```
 
 Essential Database Packages:
