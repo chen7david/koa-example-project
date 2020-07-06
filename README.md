@@ -1,5 +1,6 @@
 # Koa-Example-Project
-<strong>Introduction:</strong> This is a guide that aims to help you to set up new Koa projects with ease. This is achieved by providing examples covering the most common use cases.
+#### Introduction 
+This is a guide that aims to help you to set up new Koa projects with ease. This is achieved by providing examples covering the most common use cases.
 
 #### prerequisites
 - nodejs should be installed globally on your computer (check this by running <code>npm -v</code>, if you get a version number back you're good to go.)
