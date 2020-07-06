@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/chen7david/koa-example-project/issues"
   },
-  "homepage": "https://github.com/chen7david/koa-example-project#readme"
+  "homepage": "https://github.com/chen7david/koa-example-project#readme",
+  "dependencies": {
+    "config": "^3.3.1",
+    "js-yaml": "^3.14.0",
+    "kcors": "^2.2.2",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^9.1.0"
+  }
 }
