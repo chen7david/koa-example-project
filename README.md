@@ -245,7 +245,7 @@ Sometimes you might need to host some images or vidoes on your server. This is e
 Essential Static Package:
 - koa-static
 
-```bach
+```bash
 npm i koa-static
 ```
 1. run <code>npm i koa-static</code> 
