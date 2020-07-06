@@ -4,7 +4,7 @@
   "description": "```bach ├── config |  └── default.yaml ├── package-lock.json ├── package.json └── src    ├── index.js    └── routes       ├── example.js       └── index.js ```",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev":"nodemon ./src/index.js"
   },
   "repository": {
     "type": "git",

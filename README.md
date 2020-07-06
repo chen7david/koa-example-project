@@ -69,7 +69,7 @@ app.listen(server.port, () => {
 })
 ```
 9. In terminal run <code>npm run dev</code> (you should see "running at http://localhost:3000" printed in your console)
-10. open a web-browser and navigate to "http://localhost:3000" (you should see a blank page with Not found. If you see this the server is working)
+10. open a web-browser and navigate to "http://localhost:3000" (you should see a blank page displaying the phrase "Not Found". If you see this the server is working)
 
 #### Step by Step Walkthrough the Code in ./src/index.js
 
@@ -87,7 +87,20 @@ app.use(someMiddleware())
 ```
 
 ### Routes
-Now we will look at how we can add routes to our project.
+So far our Koa application responds "Not Found" to any request that is send to it. Adding a router will help us respond to specific requests. The code below will show you how to add a router to your koa application. 
+
+```js
+const Router = require('koa-router')
+const router = new Router()
+const controller = require('./controllers/ExampleController.js')
+
+// Define Routes
+router.get('/', controller.home)
+
+router.get('/', controller.home)
+
+module.exports = router
+```
 
 
 ### Addning a Database
