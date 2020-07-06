@@ -24,7 +24,7 @@ Essential server packages:
 2. navigate into your folder with terminal (use the cd command on MAC)
 3. run <code>npm init -y</code>
 4. run <code>npm i koa koa-router koa-bodyparser kcors config js-yaml</code>
-5. create the following folders and files in the same order as shown in the tree diagram below.
+5. create the following folders and files in the same order as shown in the tree diagram displayed below
 
 ```bach
 ├── config
