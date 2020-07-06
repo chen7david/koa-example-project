@@ -238,3 +238,41 @@ module.exports = {
     },
 }
 ```
+
+### Serving Static Files
+Sometimes you might need to host some images or vidoes on your server. This is easilly achievable by adding Koa static middleware to you application. Follow the steps below to server static files.
+
+Essential Static Package:
+- koa-static
+
+```bach
+npm i koa-static
+```
+1. run <code>npm i koa-static</code> 
+2. create a new folder called "public" in your src folder. 
+3. require koa-static package in your "src/index.js" file and add it as middleware. your file should now look like this:
+
+
+```js
+const Koa = require('koa')
+const bodyparser = require('koa-bodyparser')
+const cors = require('kcors')
+const { server } = require('config')
+const router = require('./routes')
+const serve = require('koa-static') // NEW LINE ADDED
+const url = require('url')
+const app = new Koa()
+
+/* MIDDLEWARE */
+app.use(cors())
+app.use(bodyparser())
+app.use(serve(__dirname + './../public')) // NEW LINE ADDED
+
+
+/* ROUTES */
+app.use(router.example.routes())
+
+app.listen(server.port, () => {
+    console.log(`running at ${url.format(server)}`)
+})
+```
