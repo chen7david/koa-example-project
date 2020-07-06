@@ -1,7 +1,6 @@
 
 module.exports = {
 
-
     home: async (ctx, next) => {
         ctx.body = 'Welcome to our Home Page'
     },
