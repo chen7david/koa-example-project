@@ -152,6 +152,27 @@ module.exports = {
 ```
 
 ### Addning a Database
+Almost any project will require some form of storage. In this section we will add a postgreSQL database to our Koa application. This will help us to store application related information. The follow the steps below to setup the db connection.
+
+1. copy paste the code below into your ./config/default.js file
+
+```yaml
+database:
+    client: postgresql
+    connection:
+        database: some-database-name
+        host: '192.168.50.251'
+        port: 3001
+        user: db-username
+        password: db-password
+    migrations:
+        tableName: knex_migrations
+        directory: ./src/models/migrations
+    pool:
+        min: 2
+        max: 10
+```
+
 Essential Database Packages:
 - knex
 - pg
