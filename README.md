@@ -33,10 +33,13 @@ Essential server packages:
 ├── package.json
 └── src
    ├── controllers
+   |  └── ExampleController.js
    ├── index.js
    ├── middleware
    ├── models
    └── routes
+      ├── example.js
+      └── index.js
 ```
 6. In your package.json file replace the "test" line with <code>"dev":"nodemon ./src/index.js"</code> in the scripts section
 7. Copy paste the following lines of code to your ./config/default.js file
