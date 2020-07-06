@@ -38,7 +38,8 @@ Essential server packages:
    ├── models
    └── routes
 ```
-6. Copy paste the following lines of code to your ./src/index.js file
+6. In your package.json file add <code>"dev":"nodemon ./src/index.js"</code> to your scripts sections
+7. Copy paste the following lines of code to your ./src/index.js file
 
 ```js
 const Koa = require('koa')
