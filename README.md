@@ -38,6 +38,7 @@ Essential server packages:
    ├── models
    └── routes
 ```
+- [x] Copy paste the following lines of code to your ./src/index.js file
 
 ### BOOTSTRAP APPLICATION FILE
 ```js
