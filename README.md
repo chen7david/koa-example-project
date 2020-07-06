@@ -6,6 +6,8 @@ Essential Server Packages:
 - koa-router
 - koa-bodyparser
 - kcors
+- config
+- js-yaml
 
 Essential Database Packages:
 - knex
