@@ -89,9 +89,8 @@ app.use(someMiddleware())
 ### Routes
 So far our Koa application responds "Not Found" to any request that is send to it. Adding a router will help us respond to specific requests. The code below will show you how to add a router to your koa application. 
 
-<code>./src/routes/example</code>
-
 ```js
+/* ./src/routes/example */
 const Router = require('koa-router')
 const router = new Router()
 const controller = require('./controllers/ExampleController.js')
