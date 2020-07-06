@@ -40,7 +40,6 @@ Essential server packages:
 ```
 - [x] Copy paste the following lines of code to your ./src/index.js file
 
-### BOOTSTRAP APPLICATION FILE
 ```js
 const Koa = require('koa')
 const bodyparser = require('koa-bodyparser')
