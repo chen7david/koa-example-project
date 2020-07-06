@@ -225,4 +225,16 @@ class ExampleModel extends Model {
 module.exports = ExampleModel
 ```
 
+#### Using Models in Your Controllers
+```js
+const { ExampleModel } = require('./../models')
 
+module.exports = {
+
+    dbExample: async (ctx, next) => {
+        // retrurn all examples in DB
+        const example = await ExampleModel.query()
+        ctx.body = example
+    },
+}
+```
