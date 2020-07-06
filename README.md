@@ -180,6 +180,19 @@ database:
         min: 2
         max: 10
 ```
+2. run <code>npm i knex pg objection</code> 
+3. run <code>knex init</code> (this will create a knex configuration file in your root directory)
+4. in your knexfile.js add this line of code at the top <code>const { database } = require('config')</code>
+5. set development to database, now your knexfile should look like the code below:
+```js
+const { database } = require('config')
+
+module.exports = {
+
+  development: database,
+
+}
+```
 
 
 
