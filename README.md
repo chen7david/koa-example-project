@@ -1,6 +1,20 @@
 # Koa-Example-Project
 <strong>Introduction:</strong> This is a guide that aims to help you to set up new Koa projects with ease. This is achieved by providing examples covering the most common use cases.
 
+#### prerequisites
+- nodejs should be installed globally on your computer (check this by running <code>npm -v</code>, if you get a version number back you're good to go.)
+- nodemon installed either globally or locally (this is solely for convenience)
+
+
+## SETTING UP A NODE PROJECT
+<p>
+Since Koa is used to build node applications, we should first have a look how to set up a node project. 
+To set up a node project, complete the following steps:
+- create a new folder (this will be our project folder)
+- navigate into your folder with terminal (use the cd command on MAC)
+- run <code>npm init -y</code>
+</p>
+
 ## SERVER
 
 Essential Server Packages:
