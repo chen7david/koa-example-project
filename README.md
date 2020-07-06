@@ -161,7 +161,7 @@ Essential Database Packages:
 ```bach
 npm i knex pg objection
 ```
-#### Connecting Knex to database
+#### Connecting Knex to Database
 Almost any project will require some form of storage. In this section we will add a postgreSQL database to our Koa application. This will help us to store application related information. The follow the steps below to setup the db connection.
 
 1. copy paste the code below into your ./config/default.js file
@@ -197,6 +197,32 @@ module.exports = {
 ```
 
 #### Connecting Objection to Knex
+Now we will use an Object relational Mapper(ORM) called objection js to wrap knexjs. Follow the steps below to set it up.
+1. create a Model.js file in your src/models folder
+2. copy paste the code below into your Models.js file
+```js
+const { Model } = require('objection')
+const knexfile = require('./../../knexfile')
+const Knex = require('knex')(knexfile)
+Model.Knex(Knex)
 
+class BaseModel extends Model {
+
+}
+
+module.exports = BaseModel
+``` 
+3. you can now inherit from the BaseModel class like so in the example below:
+```js
+const Model = require('./Model')
+
+class ExampleModel extends Model {
+    static get tableName(){
+        return 'examples'
+    }
+}
+
+module.exports = ExampleModel
+```
 
 
