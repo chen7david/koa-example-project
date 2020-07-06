@@ -8,7 +8,7 @@ This is a guide that aims to help you to set up new Koa projects with ease. This
 
 ## Getting Started
 
-#### Server
+### Server
 
 Essential Server Packages:
 
