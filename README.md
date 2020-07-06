@@ -1,5 +1,17 @@
 # koa-example-project
 
+Essential Server Packages:
+
+- koa
+- koa-router
+- koa-bodyparser
+- kcors
+
+Essential Database Packages:
+- knex
+- pg
+- objection
+
 ```bach
 ├── config
 |  └── default.yaml

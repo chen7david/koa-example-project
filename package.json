@@ -1,0 +1,20 @@
+{
+  "name": "koa-example-project",
+  "version": "1.0.0",
+  "description": "```bach ├── config |  └── default.yaml ├── package-lock.json ├── package.json └── src    ├── index.js    └── routes       ├── example.js       └── index.js ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chen7david/koa-example-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chen7david/koa-example-project/issues"
+  },
+  "homepage": "https://github.com/chen7david/koa-example-project#readme"
+}
