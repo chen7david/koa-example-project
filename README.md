@@ -38,7 +38,7 @@ Essential server packages:
    ├── models
    └── routes
 ```
-6. In your package.json file replace the "test" line with <code>"dev":"nodemon ./src/index.js"</code> to your scripts sections
+6. In your package.json file replace the "test" line with <code>"dev":"nodemon ./src/index.js"</code> in the scripts section
 7. Copy paste the following lines of code to your ./src/index.js file
 
 ```js
