@@ -7,6 +7,21 @@ This is a guide that aims to help you to set up new Koa projects with ease. This
 - nodemon should installed either globally or locally (this is solely for convenience)
 
 #### Getting Started
+
+## SERVER
+
+Essential Server Packages:
+
+- koa
+- koa-router
+- koa-bodyparser
+- kcors
+- config
+- js-yaml
+
+```bach
+npm i koa koa-router koa-bodyparser kcors config js-yaml
+```
 - create a new folder (this will be our project folder)
 - navigate into your folder with terminal (use the cd command on MAC)
 - run <code>npm init -y</code>
@@ -24,22 +39,6 @@ This is a guide that aims to help you to set up new Koa projects with ease. This
    ├── middleware
    ├── models
    └── routes
-```
-
-
-## SERVER
-
-Essential Server Packages:
-
-- koa
-- koa-router
-- koa-bodyparser
-- kcors
-- config
-- js-yaml
-
-```bach
-npm i koa koa-router koa-bodyparser kcors config js-yaml
 ```
 
 ### BOOTSTRAP APPLICATION FILE
