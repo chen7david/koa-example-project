@@ -115,9 +115,7 @@ module.exports = router
 ### Controllers
 Controllers provide all the logic and functionality of your app. They are responsible for returing a result to the client.
 
-```bash
-./src/controllers/ExampleController.js
-```
+<code>./src/controllers/ExampleController.js</code>
 
 ```js
 
