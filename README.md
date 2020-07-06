@@ -1,4 +1,5 @@
-# koa-example-project
+# Koa-Example-Project
+<strong>Introduction:</strong> This is a guide that aims to help you to set up new Koa projects with ease. This is achieved by providing examples covering the most common use cases.
 
 ## SERVER
 
