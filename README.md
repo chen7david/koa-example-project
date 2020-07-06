@@ -154,6 +154,14 @@ module.exports = {
 ### Addning a Database
 Almost any project will require some form of storage. In this section we will add a postgreSQL database to our Koa application. This will help us to store application related information. The follow the steps below to setup the db connection.
 
+Essential Database Packages:
+- knex
+- pg
+- objection
+
+```bach
+npm i knex pg objection
+```
 1. copy paste the code below into your ./config/default.js file
 
 ```yaml
@@ -173,12 +181,6 @@ database:
         max: 10
 ```
 
-Essential Database Packages:
-- knex
-- pg
-- objection
 
-```bach
-npm i knex pg objection
-```
+
 
