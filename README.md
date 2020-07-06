@@ -39,7 +39,14 @@ Essential server packages:
    └── routes
 ```
 6. In your package.json file replace the "test" line with <code>"dev":"nodemon ./src/index.js"</code> in the scripts section
-7. Copy paste the following lines of code to your ./src/index.js file
+7. Copy paste the following lines of code to your ./config/default.js file
+```yaml
+server:
+   protocol: 'http'
+   hostname: 'localhost'
+   port: 3000
+```
+8. Copy paste the following lines of code to your ./src/index.js file
 
 ```js
 const Koa = require('koa')
@@ -61,9 +68,18 @@ app.listen(server.port, () => {
     console.log(`running at ${url.format(server)}`)
 })
 ```
-7. In terminal run <code>npm run dev</code> (you should see "running at http://localhost:3000" printed in your console)
-8. open a web-browser and navigate to http://localhost:3000 (you should see a blank page with Not found. If you see this the server is working)
+9. In terminal run <code>npm run dev</code> (you should see "running at http://localhost:3000" printed in your console)
+10. open a web-browser and navigate to "http://localhost:3000" (you should see a blank page with Not found. If you see this the server is working)
 
+#### Step by Step Walkthrough the Code in ./src/index.js
+
+In each line of code below we are using nodejs's <code>require</code> function to import a package and assign it to a named variable so that we can refer to it later in our code when we want to use it. 
+```js
+const Koa = require('koa')
+const bodyparser = require('koa-bodyparser')
+const cors = require('kcors')
+const url = require('url')
+```
 
 Essential Database Packages:
 - knex
