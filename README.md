@@ -6,9 +6,9 @@ This is a guide that aims to help you to set up new Koa projects with ease. This
 - nodejs should be installed globally on your computer (check this by running <code>npm -v</code>, if you get a version number back you're good to go.)
 - nodemon should installed either globally or locally (this is solely for convenience)
 
-#### Getting Started
+## Getting Started
 
-## SERVER
+#### Server
 
 Essential Server Packages:
 
