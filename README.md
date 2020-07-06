@@ -20,6 +20,10 @@ Essential Database Packages:
 - objection
 
 ```bach
+npm i knex pg objection
+```
+
+```bach
 ├── config
 |  └── default.yaml
 ├── package-lock.json
