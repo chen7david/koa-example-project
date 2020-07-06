@@ -86,6 +86,11 @@ The <code>app.use()</code> function takes middleware as an argument. Here we can
 app.use(someMiddleware())
 ```
 
+### Routes
+Now we will look at how we can add routes to our project.
+
+
+### Addning a Database
 Essential Database Packages:
 - knex
 - pg
