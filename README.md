@@ -10,7 +10,7 @@ This is a guide that aims to help you to set up new Koa projects with ease. This
 
 ### Server
 
-Essential Server Packages:
+Essential server packages:
 
 - koa
 - koa-router
@@ -19,13 +19,14 @@ Essential Server Packages:
 - config
 - js-yaml
 
-```bach
-npm i koa koa-router koa-bodyparser kcors config js-yaml
-```
+#### Step by Step Walkthrough
 - create a new folder (this will be our project folder)
 - navigate into your folder with terminal (use the cd command on MAC)
 - run <code>npm init -y</code>
-- run <code>npm i koa koa-router koa-bodyparser kcors config js-yaml</code>
+- run 
+```bach
+npm i koa koa-router koa-bodyparser kcors config js-yaml
+```
 - create the following folders and files in the same order as shown in the tree diagram below.
 
 ```bach
