@@ -4,17 +4,27 @@ This is a guide that aims to help you to set up new Koa projects with ease. This
 
 #### prerequisites
 - nodejs should be installed globally on your computer (check this by running <code>npm -v</code>, if you get a version number back you're good to go.)
-- nodemon installed either globally or locally (this is solely for convenience)
+- nodemon should installed either globally or locally (this is solely for convenience)
 
-
-## SETTING UP A NODE PROJECT
-<p>
-Since Koa is used to build node applications, we should first have a look how to set up a node project. 
-To set up a node project, complete the following steps:
+#### Getting Started
 - create a new folder (this will be our project folder)
 - navigate into your folder with terminal (use the cd command on MAC)
 - run <code>npm init -y</code>
-</p>
+- create the following folders and files in the same order as shown in the tree diagram below.
+
+```bach
+├── config
+|  └── default.yaml
+├── package-lock.json
+├── package.json
+└── src
+   ├── controllers
+   ├── index.js
+   ├── middleware
+   ├── models
+   └── routes
+```
+
 
 ## SERVER
 
@@ -62,14 +72,3 @@ Essential Database Packages:
 npm i knex pg objection
 ```
 
-```bach
-├── config
-|  └── default.yaml
-├── package-lock.json
-├── package.json
-└── src
-   ├── index.js
-   └── routes
-      ├── example.js
-      └── index.js
-```
