@@ -20,11 +20,11 @@ Essential server packages:
 - js-yaml
 
 #### Step by Step Walkthrough
-- [x] create a new folder (this will be our project folder)
-- [x] navigate into your folder with terminal (use the cd command on MAC)
-- [x] run <code>npm init -y</code>
-- [x] run <code>npm i koa koa-router koa-bodyparser kcors config js-yaml</code>
-1. create the following folders and files in the same order as shown in the tree diagram below.
+1. create a new folder (this will be our project folder)
+2. navigate into your folder with terminal (use the cd command on MAC)
+3. run <code>npm init -y</code>
+4. run <code>npm i koa koa-router koa-bodyparser kcors config js-yaml</code>
+5. create the following folders and files in the same order as shown in the tree diagram below.
 
 ```bach
 ├── config
@@ -38,7 +38,7 @@ Essential server packages:
    ├── models
    └── routes
 ```
-1. Copy paste the following lines of code to your ./src/index.js file
+6. Copy paste the following lines of code to your ./src/index.js file
 
 ```js
 const Koa = require('koa')
