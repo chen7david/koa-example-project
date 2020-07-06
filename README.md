@@ -61,6 +61,9 @@ app.listen(server.port, () => {
     console.log(`running at ${url.format(server)}`)
 })
 ```
+7. In terminal run <code>npm run dev</code> (you should see "running at http://localhost:3000" printed in your console)
+8. open a web-browser and navigate to http://localhost:3000 (you should see a blank page with Not found. If you see this the server is working)
+
 
 Essential Database Packages:
 - knex
