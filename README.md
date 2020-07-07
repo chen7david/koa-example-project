@@ -282,3 +282,4 @@ app.listen(server.port, () => {
 
 
 ### Uploading Files
+This section shows an example of how to add upload functionality to your Koa application.
