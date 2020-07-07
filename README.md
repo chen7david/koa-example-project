@@ -151,6 +151,8 @@ module.exports = {
 }
 ```
 
+## Connecting to Database 
+
 ### Addning a Database
 
 Essential Database Packages:
@@ -238,6 +240,7 @@ module.exports = {
     },
 }
 ```
+## Serving Files
 
 ### Serving Static Files
 Sometimes you might need to host some images or vidoes on your server. This is easilly achievable by adding Koa static middleware to you application. Follow the steps below to server static files.
