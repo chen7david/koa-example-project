@@ -312,7 +312,7 @@ app.use(cargo())
 ##### Using Cargo in your controllers
 ```js
 create: async (ctx, next) => {
-    cargo.payloadTo(user)
+    cargo.setPayload(user)
     cargo.directive('confirm-email')
     ctx.body = ctx.cargo.setDetail('created', 'user')
     ctx.body = ctx.cargo.loadDetails(type, { label, limit, ref }, key)
