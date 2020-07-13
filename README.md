@@ -312,10 +312,10 @@ app.use(cargo())
 ##### Using Cargo in your controllers
 ```js
 create: async (ctx, next) => {
-    const body = ctx.request.body
-    const user = await User.query().insert(body).returning('*')
-    if(!user) return ctx.cargo.setDetail('expired', 'water')
-    ctx.body = user
+    cargo.payloadTo(user)
+    cargo.directive('confirm-email')
+    ctx.body = ctx.cargo.setDetail('created', 'user')
+    ctx.body = ctx.cargo.loadDetails(type, { label, limit, ref }, key)
 },
 ```
 ##### Default Fields 
