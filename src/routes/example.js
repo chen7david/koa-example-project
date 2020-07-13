@@ -9,10 +9,10 @@ router.param('id', controller.paramLoader)
 router.get('/', controller.home)
 
 // QUERY PARAM
-router.get('/animals', controller.queryParam)
+router.get('/animals', controller.queryParams)
 
 // PATH PARAM
-router.get('/animal/:id', controller.pathParam)
+router.get('/animal/:id', controller.pathParams)
 
 
 module.exports = router

@@ -10,7 +10,7 @@ module.exports = {
         return next()
     },
 
-    queryParam: async (ctx, next) => {
+    queryParams: async (ctx, next) => {
         const queryParams = ctx.request.query
         ctx.body = {
             msg: 'Query Params are below.',
@@ -18,7 +18,15 @@ module.exports = {
         }
     },
 
-    pathParam: async (ctx, next) => {
+    pathParams: async (ctx, next) => {
+        const pathParams = ctx.params
+        ctx.body = {
+            msg: 'Path Params are below.',
+            pathParams
+        }
+    },
+
+    bodyParams: async (ctx, next) => {
         const pathParams = ctx.params
         ctx.body = {
             msg: 'Path Params are below.',
