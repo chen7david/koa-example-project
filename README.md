@@ -321,6 +321,38 @@ create: async (ctx, next) => {
 },
 ```
 
+##### JWT With PEM 
+
+```js
+// src/utils/keys.js
+
+const fs = require('fs')
+const p = require('path')
+const pripath = p.resolve(__dirname, '../../', 'config', 'private.pem')
+const { accexp, refexp, passphrase } = require('config').security
+const pubpath = p.resolve(__dirname, '../../', 'config', 'public.pem')
+const _prikey = fs.readFileSync(pripath, 'utf8')
+const pubkey = fs.readFileSync(pubpath, 'utf8')
+const accsign = { expiresIn: accexp, algorithm: 'RS256' }
+const refsign = { expiresIn: refexp, algorithm: 'RS256' }
+const versign = { algorithms: ['RS256'] }
+const prikey = { key: _prikey, passphrase }
+
+module.exports = {
+    prikey,
+    pubkey,
+    accsign,
+    refsign,
+    versign
+}
+
+// in your project
+const jwt = require('jsonwebtoken')
+
+const token = jwt.sign({userId: 22342342}, prikey, accsign)
+const verify = jwt.verify(token, pubkey, versign)
+```
+
 ##### Default Fields 
 ```js
 /*  */
