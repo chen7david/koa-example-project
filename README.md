@@ -323,6 +323,12 @@ create: async (ctx, next) => {
 
 ##### JWT With PEM 
 
+commands to create keys
+```cmd
+$ openssl genpkey -algorithm RSA -aes256 -out config/private.pem
+$ openssl rsa -in config/private.pem -pubout -outform PEM -out config/public.pem
+```
+
 ```js
 // src/utils/keys.js
 
