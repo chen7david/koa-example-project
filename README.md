@@ -295,7 +295,33 @@ This section shows an example of how to add upload functionality to your Koa app
 
 ## Adding Sockets 
 This section we will shows an example of how to add realtime functionality to your Koa application.
+```js
+const app = new (require('koa'))
+const { http, ws: {cors} } = require('config').server
+const server = require('http').createServer(app.callback())
+const io = require('socket.io')(server, {cors:{origin: '*'}})
+const router = require('koa-router')()
 
+io.on('connect', (socket) => {
+
+    console.log('connected', socket.id)
+
+    socket.on('disconnect', () => {
+        console.log('disconect', socket.id)
+    })
+})
+
+router.get('/', async (ctx) => {
+    ctx.body = 'you have reached the home route'
+})
+
+
+/* SERVER */
+server.listen(http.port, () => {
+    const hostname = require('url').format(http)
+    console.log(`server running at: ${hostname}`)
+})
+```
 
 ## Adding Cargo-io 
 This allows us to send uniform notifications to our clients.
